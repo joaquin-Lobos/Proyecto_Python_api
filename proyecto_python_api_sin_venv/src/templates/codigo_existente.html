@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<form method = "POST" action="{{url_for('codigo_existente')}}">
+    <h4>{{producto["codigo"]}} ya existe, quieres añadir {{cantidad}} al stock actual?</h4>
+    <input type="submit" value="Si">
+</form> 
+
+{% endblock %}
