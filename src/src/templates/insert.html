@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1>Insertar</h1>
+
+
+    <form method = "POST" action="{{url_for('ingresar')}}">
+        <label>codigo del producto</label><br>
+        <input type="number" name="codigo"><br>
+        <label>descripcion del producto</label><br>
+        <input type="text" name="descripcion"><br>
+        <label>cantidad del producto en stock</label><br>
+        <input type="number" name="cantidad"><br>
+        <label>peso individual en kg del producto</label><br>
+        <input type="number" step="0.01" min="0" name="peso_individual"><br>
+        <input type="submit" value="Enviar">
+    </form> 
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1>Retirar</h1>
+
+
+    <form method = "POST" action="{{url_for('search')}}">
+        <label>coloque el nombre del producto que quiere buscar</label><br>
+        <input type="name" name="descripcion"><br>
+        <label>año</label><br>
+        <input type="number" name="year"><br>
+        <label>mes</label><br>
+        <input type="number" name="month"><br>
+        <label>dia</label><br>
+        <input type="number" name="day"><br>
+        <input type="submit" value="Graficar">
+    </form> 
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1>Retirar</h1>
+
+
+    <form method = "POST" action="{{url_for('retirar')}}">
+        <label>codigo del producto</label><br>
+        <input type="number" name="codigo"><br>
+        <label>cantidad del producto que se quiere retirar en kg</label><br>
+        <input type="number" step="0.01" min="0" name="cantidad"><br>
+        <input type="submit" value="Retirar">
+    </form> 
+{% endblock %}
