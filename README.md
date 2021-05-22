@@ -9,6 +9,7 @@ nuevas implementaciones: base de datos tinydb, flask, lambda, html, css.
 - instalar visual studio.
 - descargar la herramienta de python en visual studio.
 - abrir el programa.
+- abrir la carpeta de esta aplicación en el programa
 - ejecutar el archivo app.py con ctrl + f5.
 - copiar el link que aparecerá al final de la consola y pegarlo en el navegador.
 - ya puede utilizar el programa.
